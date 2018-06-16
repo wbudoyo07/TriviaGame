@@ -1,0 +1,38 @@
+#container{
+    width:960px;
+    margin: 0 auto;
+   background-color: grey;
+}
+
+.main-title{
+    font-size: 100px;
+    text-align: center;
+
+}
+
+button{
+    font-size: 100px;
+    background-color: blue;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+   
+    
+    
+}
+
+#questionsID{
+    font-size: 50px;
+    color :blue;
+    text-align: center;
+    margin-bottom: 10px
+   
+}
+
+.answerClass{
+    margin-top: 20px;
+    font-size: 50px;
+    color :white;
+    text-align: center;
+}
