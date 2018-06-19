@@ -1,7 +1,7 @@
 // alert("yeah works");
 
 // VARIABLES
-var seconds =10;
+var seconds =2;
 var intervalId;
 // counter to track win and lose
 var winCounter = 0;
@@ -52,8 +52,8 @@ var questionsAndAnswer =[
 
     {
         questions: "Who has Most Triple-Doubles In A Single Season? ",
-        answerOptions: ["Lebron James" , "Michael Jordan", "Russel WestBrook", "Stephen Curry"],
-        CorrectAnswer : "Russel WestBrook",
+        answerOptions: ["Lebron James" , "Michael Jordan", "Russell WestBrook", "Stephen Curry"],
+        CorrectAnswer : "Russell WestBrook",
         gif: "",
 
     }
@@ -76,7 +76,7 @@ function initilizieQuestions(){
 
         // intilizing the answerOptions 
         for(j=0; j<questionsAndAnswer[i].answerOptions.length; j++){
-            $(".questions").append("<input type='radio' name='question-"+i+"' value=' "+ questionsAndAnswer[i].answerOptions[j]+"' >" +
+            $(".questions").append("<input type='radio' name='question-"+i+"' value='"+ questionsAndAnswer[i].answerOptions[j]+"' >" +
         questionsAndAnswer[i].answerOptions[j] +"</input>");
             
         }// end loop answer
@@ -116,21 +116,49 @@ function decrement(){
 //  comparing the answer if the user's answer is correct or not
 function compareAnswer(){
 
- var getName = document.getElementsByName("questions-0")
-
-
-
-    
-    
-
-         
   
+// comparing if the radio button that picked  same as the correct answer
+if($('input[name=question-0]:checked').val() === questionsAndAnswer[0].CorrectAnswer){
+winCounter++;
+}else{
+    lossCounter++;
+};
 
+if($('input[name=question-1]:checked').val() === questionsAndAnswer[1].CorrectAnswer){
+    winCounter++;
+    }else{
+        lossCounter++;
+    };
+
+    if($('input[name=question-2]:checked').val() === questionsAndAnswer[2].CorrectAnswer){
+        winCounter++;
+        }else{
+            lossCounter++;
+        };
+
+        if($('input[name=question-3]:checked').val() === questionsAndAnswer[3].CorrectAnswer){
+            winCounter++;
+            }else{
+                lossCounter++;
+            };
+
+            if($('input[name=question-4]:checked').val() === questionsAndAnswer[4].CorrectAnswer){
+                winCounter++;
+                }else{
+                    lossCounter++;
+                };
+
+                if($('input[name=question-5]:checked').val() === questionsAndAnswer[5].CorrectAnswer){
+                    winCounter++;
+                    }else{
+                        lossCounter++;
+                    };
+    
 }// end compareAnswer function
 
 // all the user result
 function result(){
-    
+    compareAnswer();
     $(".timer ").remove();
      $(".questions ").remove();
     
@@ -150,12 +178,7 @@ function result(){
         $(".timer").html('<h1>30</h1>');
         run();
         initilizieQuestions();
-        compareAnswer();
-        
-       
-    })
+        })
     //
-
-
 
 });// end jquary

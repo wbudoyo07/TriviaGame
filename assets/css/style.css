@@ -1,7 +1,7 @@
 #container{
     width:960px;
     margin: 0 auto;
-   background-color: grey;
+   background-color: greenyellow;
 }
 
 .main-title{
@@ -9,20 +9,35 @@
     text-align: center;
 
 }
-
-button{
-    font-size: 100px;
-    background-color: blue;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 300px;
-    margin-bottom: 20px;
-   
-    
+#mainArea{
+    padding-bottom: 10px;
+    text-align: center;
     
 }
 
-#questionsID{
+#start-btn{
+   display:block;
+   width:500px;
+   margin:0 auto;
+   padding-bottom: 50px;
+   padding-top: 50px;
+   
+}
+
+input{
+    font-size: 100px;
+
+}
+
+#result{
+    font-size: 50px;
+}
+
+
+
+
+
+/* #questionsID{
     font-size: 50px;
     color :blue;
     text-align: center;
@@ -35,4 +50,4 @@ button{
     font-size: 50px;
     color :white;
     text-align: center;
-}
+} */
