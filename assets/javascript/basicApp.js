@@ -1,7 +1,7 @@
 // alert("yeah works");
 
 // VARIABLES
-var seconds =15;
+var seconds =30;
 var intervalId;
 // counter to track win and lose
 var winCounter = 0;
